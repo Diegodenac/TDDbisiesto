@@ -16,4 +16,10 @@ describe("Verificar si es Bisiesto", () => {
   it("Verificar si es divisible entre 400 es año bisiesto", () => {
     expect(esBisiesto(1200)).toEqual(true);
   });
+  it("Verificar si es divisible entre 100, pero no por 400 no es año bisiesto", () => {
+    expect(esBisiesto(1300)).toEqual(false);
+  });
+  it("Verificar si es divisible entre 100, pero no por 400 no es año bisiesto", () => {
+    expect(esBisiesto(1800)).toEqual(false);
+  });
 });
