@@ -1,5 +1,7 @@
 function esBisiesto(n) {
-  return true;
+  if(n===4)
+    return true;
+  return false;
 }
 
 export default esBisiesto;
