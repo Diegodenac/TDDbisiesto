@@ -7,7 +7,13 @@ describe("Verificar si es Bisiesto", () => {
   it("Verificar si 2017 es año bisiesto", () => {
     expect(esBisiesto(2017)).toEqual(false);
   });
-  it("Verificar si es divisible entre 4 es año bisiesto", () => {
-    expect(esBisiesto(8)).toEqual(true);
+  it("Verificar si es divisible entre 400 es año bisiesto", () => {
+    expect(esBisiesto(400)).toEqual(true);
+  });
+  it("Verificar si es divisible entre 400 es año bisiesto", () => {
+    expect(esBisiesto(800)).toEqual(true);
+  });
+  it("Verificar si es divisible entre 400 es año bisiesto", () => {
+    expect(esBisiesto(1200)).toEqual(true);
   });
 });
